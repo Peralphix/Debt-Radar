@@ -1,0 +1,36 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore all logfiles and tempfiles
+/log/*
+!/log/.gitkeep
+/tmp/*
+!/tmp/.gitkeep
+!/tmp/pids
+/tmp/pids/*
+!/tmp/pids/.gitkeep
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore gems
+/vendor/bundle
+
+# Ignore coverage
+/coverage/
+
+# Ignore Chrome data
+/chrome_data/
