@@ -11,6 +11,8 @@ gem 'http'
 
 gem "pg"
 
+gem "puma"
+
 gem "sentry-ruby"
 gem "sentry-rails"
 

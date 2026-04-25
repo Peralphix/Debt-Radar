@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
-class PublicAPIController < ApplicationController
+class PublicApiController < ApplicationController
   skip_before_action :verify_authenticity_token, raise: false
 
   def check_user
-    result = SearchAggregator.new(**debtor_params).call
-
+    # binding.irb
+    result = SearchAggregator.new(**debtor_params.to_h.deep_symbolize_keys).call
+    #
     render json: { data: result }
+    # render json: { data: debtor_params }
   end
 
   private
