@@ -5,11 +5,9 @@ class PublicApiController < ApplicationController
   before_action :authenticate_internal_api!
 
   def check_user
-    # binding.irb
     result = SearchAggregator.new(**debtor_params.to_h.deep_symbolize_keys).call
-    #
+
     render json: { data: result }
-    # render json: { data: debtor_params }
   end
 
   private
