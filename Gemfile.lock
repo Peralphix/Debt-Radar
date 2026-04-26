@@ -342,7 +342,7 @@ DEPENDENCIES
   selenium-webdriver (~> 4.39)
   sentry-rails
   sentry-ruby
-  sidekiq (~> 7.2)
+  sidekiq (~> 7.1)
 
 RUBY VERSION
    ruby 3.2.0p0
