@@ -6,7 +6,7 @@ class ReestrZalogov::Search < BaseSearch
   end
 
   def call
-    ReestrZalogov::Request.new(vin: @vin, headless: true).call
+    ReestrZalogov::Request.new(vin: @vin).call
   rescue => e
     Rails.logger.error("Не удалось получить данные из сервиса Reestr Zalogov.")
     # отправлять ошибку в сентри
