@@ -162,6 +162,8 @@ GEM
     nio4r (2.7.5)
     nokogiri (1.19.0-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.19.0-x86_64-linux-gnu)
+      racc (~> 1.4)
     oj (3.16.13)
       bigdecimal (>= 3.0)
       ostruct (>= 0.2)
@@ -171,6 +173,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.6.3-arm64-darwin)
+    pg (1.6.3-x86_64-linux)
     playwright-ruby-client (1.58.1)
       base64
       concurrent-ruby (>= 1.1.6)
@@ -323,6 +326,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   dotenv-rails (~> 2.8)
