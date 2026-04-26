@@ -6,6 +6,7 @@ default: &default
   port: 5432
   username: '<%= ENV["POSTGRES_USER"] %>'
   database: '<%= ENV["POSTGRES_DATABASE"] %>'
+  password: '<%= ENV["POSTGRES_PASSWORD"] %>'
 
 development:
   <<: *default
