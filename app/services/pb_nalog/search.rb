@@ -9,6 +9,7 @@ class PbNalog::Search < BaseSearch
     search_id = PbNalog::Request::SearchId.new(@inn).call
     search_id_not_found! unless search_id
 
+    sleep 1
     result = PbNalog::Request::Result.new(search_id).call
     result_data = get_data(result)
 
