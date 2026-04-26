@@ -26,7 +26,7 @@ gem 'nokogiri', '~> 1.15'
 gem 'oj', '~> 3.16'
 
 # Фоновые задачи
-gem 'sidekiq', '~> 7.1'
+gem 'sidekiq', '~> 6.5'
 
 # Redis для Sidekiq
 gem 'redis', '~> 5.0'
