@@ -14,6 +14,10 @@ class SeleniumBuilder
   def build_driver
     options = Selenium::WebDriver::Chrome::Options.new
 
+    if Rails.env.production?
+      options.binary = "/usr/bin/google-chrome"
+    end
+
     options.add_argument("--window-size=1400,900")
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")

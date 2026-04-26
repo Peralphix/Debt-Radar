@@ -15,9 +15,12 @@ class SearchAggregator
 
     BankrotFedresurs::UpdateData.new(user).call
     PbNalog::UpdateData.new(user).call
-    TrafficFines::UpdateData.new(vehicle).call
     KadArbitr::UpdateData.new(user).call
-    ReestrZalogov::UpdateData.new(vehicle).call
+
+    if vehicle
+      TrafficFines::UpdateData.new(vehicle).call
+      ReestrZalogov::UpdateData.new(vehicle).call
+    end
     # binding.irb
     # threads = []
 
